@@ -1,0 +1,17 @@
+//send call data => function dispatch -> function
+
+
+//function dispatch macro are function
+//binary of below function
+//60008060093d393df3 -> contract creation bute code
+
+//"takee the binary after me, and stick it on-chain?"
+
+//XXXX?? => Runtime Code
+
+//XX --> 39 is for copycode (opcode)
+#define macro MAIN()=takes(0) returns(0){
+    //?? to put data where Stack machince it is on evm operation
+    //adding thing will go to stack evm is known as stack machaine.
+     
+}
