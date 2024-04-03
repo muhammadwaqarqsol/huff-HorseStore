@@ -4,14 +4,30 @@
 //function dispatch macro are function
 //binary of below function
 //60008060093d393df3 -> contract creation bute code
-
-//"takee the binary after me, and stick it on-chain?"
+// when deploying on the etheruem node
+//"takee the binary after me, and stick it on-chain"
 
 //XXXX?? => Runtime Code
 
 //XX --> 39 is for copycode (opcode)
+
+//on contract creation bytecode when something is being deployed on chain you can check for CODECOPY OPCode
+
+//lets find the function selector and then it will route the code in suggested code to update the horses. 
 #define macro MAIN()=takes(0) returns(0){
     //?? to put data where Stack machince it is on evm operation
     //adding thing will go to stack evm is known as stack machaine.
-     
+     0x00 //push zero opcode and want to push on the stack
+     //0x01 // push 1 opcode stack : Top [0] Bottom
+    calldataload //[calldata] it will write the whole byte functionality inside the stack
+    //how to cut down the calldata ==> to the function selector?
+    //easy approach is to shr shift right to least significant bits
+    //SHR opcode
+    //0x0102(bytes)
+    //1 byts= 8 bit 
+    //binary : 0b 1 00000010 >> shift by 2
+    // 
+
 }
+
+//the reason the zero index is remove when we say call data to stick to stack machine it will take all the data from zero index and pop push 0 and put all data in zero index.
